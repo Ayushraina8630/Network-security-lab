@@ -5,7 +5,7 @@ echo "   X.509 Certificate Validation Tool"
 echo "========================================"
 
 CERT="certificate.crt"
-KEY="tanish.key"
+KEY="ayush.key"
 
 echo
 echo "[1] Checking certificate file..."
