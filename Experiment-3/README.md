@@ -4,19 +4,24 @@ Objective
 To develop a basic challenge-response authentication system to validate user identity and simulate replay attack detection.
 
 Brief Theory
+
 Challenge-Response Authentication
 An authentication method in which the system sends a unique challenge, and the user generates a valid response using a shared secret.
 
 Nonce
+
 A randomly generated value used only once during authentication to make each challenge unique and prevent replay attacks.
 
 HMAC
+
 Hash-based Message Authentication Code (HMAC) uses a secret key with a hash function to verify the integrity and authenticity of a message.
 
 Replay Attack
+
 An attack in which an attacker captures a valid authentication response and retransmits it to gain unauthorized access.
 
 Procedure
+
 Initialize the shared secret: A common secret key is defined between the user and authentication system.
 
 Generate a challenge: When authentication starts, a random 16-byte hexadecimal nonce is generated using the secrets module. The username and challenge timestamp are stored.
@@ -38,14 +43,17 @@ View Replay.py Code
 Replay Attack Handling Output
 
 Result
+
 The legitimate authentication response was accepted with "Authentication successful." Reusing the same nonce was detected as a replay attack and rejected. A response with an older timestamp was rejected as an expired response. Modification of the HMAC tag caused the authentication to fail.
 
 All 4 test cases produced the expected security outcomes, giving a 100% test-case verification rate.
 
 Discussion
+
 The legitimate response was accepted, while the replayed nonce, expired response, and modified HMAC were rejected. These results demonstrate how nonce tracking prevents replay, timestamp checking provides freshness, and HMAC verification detects response tampering.
 
 Improvements
+
 Added an HMAC tampering test that modifies the received authentication tag and verifies that the altered response is rejected, demonstrating the integrity and authenticity protection provided by HMAC.
 
 Conclusion
