@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="SSH service status screenshot">
+  <defs>
+    <style>
+      .term-bg { fill: #1b0618; }
+      .text-main { fill: #e6e1e7; font-family: 'DejaVu Sans Mono', 'Consolas', monospace; font-size: 20px; }
+      .text-prompt { fill: #e8d6f2; font-family: 'DejaVu Sans Mono', 'Consolas', monospace; font-size: 20px; }
+      .text-green { fill: #6fe29d; font-family: 'DejaVu Sans Mono', 'Consolas', monospace; font-size: 20px; }
+      .text-output { fill: #f0edf1; font-family: 'DejaVu Sans Mono', 'Consolas', monospace; font-size: 20px; }
+      .text-muted { fill: #d9d2d9; font-family: 'DejaVu Sans Mono', 'Consolas', monospace; font-size: 20px; }
+      .dot { fill: #4ae281; }
+    </style>
+  </defs>
+
+  <rect class="term-bg" width="1600" height="900" />
+
+  <g>
+    <text x="30" y="52" class="text-prompt">ayush</text>
+    <text x="112" y="52" class="text-main">raina@raina-Virtual-Platform:~$</text>
+    <text x="415" y="52" class="text-output"> sudo systemctl enable --now ssh</text>
+
+    <text x="30" y="92" class="text-main">systemctl status ssh --no-pager</text>
+    <text x="30" y="132" class="text-main">sudo ssh -tlnp | grep ':22'</text>
+    <text x="30" y="172" class="text-main">Synchronizing state of ssh.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.</text>
+    <text x="30" y="212" class="text-main">Executing: /usr/lib/systemd/systemd-sysv-install enable ssh</text>
+    <text x="30" y="252" class="text-main">Created symlink '/etc/systemd/system/ssh.service' → '/usr/lib/systemd/system/ssh.service'.</text>
+    <text x="30" y="292" class="text-main">Created symlink '/etc/systemd/system/multi-user.target.wants/ssh.service' → '/usr/lib/systemd/system/ssh.service'.</text>
+
+    <circle cx="45" cy="335" r="6" class="dot"/>
+    <text x="60" y="340" class="text-green">ssh.service - OpenBSD Secure Shell server</text>
+
+    <text x="60" y="380" class="text-main">Loaded: loaded (/usr/lib/systemd/system/ssh.service; enabled; preset: enabled)</text>
+    <text x="60" y="420" class="text-main">Active: active (running) since Sat 2026-10-17 19:22:26 IST; 6ms ago</text>
+    <text x="60" y="460" class="text-main">Invocation: 83c57894a96b4a25b9836ca97cf5ad9f</text>
+    <text x="60" y="500" class="text-main">TriggeredBy: </text>
+    <text x="255" y="500" class="text-green">● ssh.socket</text>
+    <text x="60" y="540" class="text-main">Docs: man:sshd(8)</text>
+    <text x="185" y="580" class="text-main">man:sshd_config(5)</text>
+
+    <text x="60" y="620" class="text-main">Process: 8491 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)</text>
+    <text x="60" y="660" class="text-main">Main PID: 8494 (sshd)</text>
+    <text x="60" y="700" class="text-main">Tasks: 1 (limit: 6092)</text>
+    <text x="60" y="740" class="text-main">Memory: 1.6M (peak: 2.4M)</text>
+    <text x="60" y="780" class="text-main">CPU: 17ms</text>
+    <text x="60" y="820" class="text-main">CGroup: /system.slice/ssh.service</text>
+    <text x="98" y="860" class="text-main">└─8494 "/usr/sbin/sshd" -D [listener] 0 of 10-100 startups</text>
+
+    <g transform="translate(0,0)">
+      <text x="30" y="900" class="text-output">Oct 17 19:22:26 ayush raina-VMware-Virtual-Platform systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...</text>
+      <text x="30" y="935" class="text-output">Oct 17 19:22:26 ayush raina-VMware-Virtual-Platform sshd[8494]: Server listening on 0.0.0.0 port 22.</text>
+      <text x="30" y="970" class="text-output">Oct 17 19:22:26 ayush raina-VMware-Virtual-Platform sshd[8494]: Server listening on :: port 22.</text>
+      <text x="30" y="1005" class="text-output">Oct 17 19:22:26 ayush raina-VMware-Virtual-Platform systemd[1]: Started ssh.service - OpenBSD Secure Shell server.</text>
+      <text x="30" y="1040" class="text-output">LISTEN 0 4096 0.0.0.0:22 0.0.0.0:* users:(("sshd",pid=8494,fd=3),("systemd",pid=1,fd=132))</text>
+      <text x="30" y="1075" class="text-output">LISTEN 0 4096 [::]:22 [::]:* users:(("sshd",pid=8494,fd=4),("systemd",pid=1,fd=133))</text>
+    </g>
+  </g>
+</svg>
