@@ -107,7 +107,7 @@ The Ubuntu-side commands are documented in [`server_commands.sh`](Codes/Server_c
 
 The Kali Linux client was used to connect to the Ubuntu server using:
 
-`ssh tanish-sharma@192.168.125.129`
+`ssh ayush-raina@192.168.125.129`
 
 After verifying the server's host-key fingerprint, the Ubuntu account password was entered to establish the remote shell.
 
@@ -163,7 +163,7 @@ Appropriate permissions were configured for the SSH directory and private key us
 
 The public key was then transferred to the Ubuntu account using:
 
-`ssh-copy-id -i ~/.ssh/id_ed25519.pub tanish-sharma@192.168.125.129`
+`ssh-copy-id -i ~/.ssh/id_ed25519.pub ayush-raina@192.168.125.129`
 
 This command added the public key to the account's `authorized_keys` file, allowing the server to authorize authentication using the corresponding private key.
 
@@ -175,7 +175,7 @@ This command added the public key to the account's `authorized_keys` file, allow
 
 Public-key authentication was tested with password authentication disabled using:
 
-`ssh -o PreferredAuthentications=publickey -o PasswordAuthentication=no tanish-sharma@192.168.125.129`
+`ssh -o PreferredAuthentications=publickey -o PasswordAuthentication=no ayush-raina@192.168.125.129`
 
 Inside the remote shell, the following commands were executed:
 
@@ -196,7 +196,7 @@ The private key was added to the agent using:
 
 A subsequent SSH connection was established using:
 
-`ssh tanish-sharma@192.168.125.129`
+`ssh ayush-raina@192.168.125.129`
 
 The `exit` command was used to terminate the remote session and return to Kali Linux.
 
@@ -245,6 +245,8 @@ Contains the Kali Linux commands used to check the SSH client, establish remote 
 ### Output Files
 
 The `Outputs` folder contains the screenshots documenting the experiment:
+
+The current screenshots are the original captures and still show the previous account. Replace them with genuine screenshots from the `ayush-raina` account when available.
 
 - `ss1.png` — SSH client version check
 - `ss2.png` — Password-based SSH connection
