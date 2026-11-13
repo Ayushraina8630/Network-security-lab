@@ -16,6 +16,7 @@ This repository contains the laboratory work for the Network Security Lab.
 5. [Experiment 5: Capture and Analyze TLS Handshake using Wireshark](Experiment-5/)
 6. [Experiment 6: Establish Secure Remote Login Using SSH](Experiment-6/)
 7. [Experiment 7: Analyze WPA2 Wireless Security and Capture Handshake with Wireshark](Experiment-7/)
+8. [Experiment 8: Send and Receive OpenPGP-Protected Email Using Thunderbird](Experiment-8/)
 
 ## Repository Structure
 
@@ -26,6 +27,7 @@ This repository contains the laboratory work for the Network Security Lab.
 - Experiment-5/
 - Experiment-6/
 - Experiment-7/
+- Experiment-8/
 
 ## Notes
 
@@ -35,3 +37,4 @@ Experiment 4 contains the OpenSSL commands, certificate validation script, gener
 Experiment 5 includes the Wireshark-based TLS handshake capture, analysis, and required output files.
 Experiment 6 demonstrates password-based and public-key SSH authentication between Kali Linux and Ubuntu, with command scripts and output screenshots.
 Experiment 7 includes the WPA2 four-way handshake analysis, Wireshark screenshots, and a saved packet capture.
+Experiment 8 explains how to set up OpenPGP in Thunderbird, verify a partner's public-key fingerprint, and test encrypted, signed email and attachments.
